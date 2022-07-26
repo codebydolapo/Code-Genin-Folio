@@ -1,18 +1,17 @@
 import styles from '../styles/mainbody.module.css'
-import Sidebar from './Sidebar'
-import Feed from './Feed'
-import Widgets from './Widgets'
-import Session from "C://PurpleNetwork/PurpleNetwork/types.d";
+import Landing from './Landing'
+import About from './About'
+import Menu from './Menu'
 
 
-function Mainbody({session, posts}: Session){
-    return (
-      <div className={styles.mainBody}>
-        <Sidebar session={session} />
-        <Feed session={session} posts = {posts}/>
-        <Widgets />
-      </div>
-    );
+function Mainbody(){
+    return(
+        <div className = {styles.mainBody}>
+            <Landing/>
+            <About/>
+            <Menu/>
+        </div>
+    )
 }
 
 export default Mainbody

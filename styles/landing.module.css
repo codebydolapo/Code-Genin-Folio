@@ -1,0 +1,194 @@
+.landing{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('/images/a.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-color: rgb(12, 12, 12);
+    background-blend-mode:soft-light;
+    filter: grayscale(0.5)
+}
+
+.landingDiv{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 100px; */
+}
+
+.landingDiv > h2{
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Cormorant SC', poppins, serif;
+    color: white;
+}
+
+.landingDiv > h1{
+    font-size: 120px;
+    line-height: 100px;
+    font-family: 'Cormorant SC', poppins, serif;
+    color: white;
+
+}
+
+.landingDiv >p{
+    font-family: 'Ibarra Real Nova', poppins, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.landing > button{
+    width: 200px;
+    height: 40px;
+    background: black;
+    color: white;
+    font-family: 'Cormorant SC', poppins, serif;
+    margin-top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 0;
+}
+
+@media only screen and (max-width: 700px){
+
+    .landing{
+    height: 100vh;
+    width: calc(100vw - 70px);
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('/images/a.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-color: rgb(12, 12, 12);
+    background-blend-mode:soft-light;
+    filter: grayscale(0.5);
+    margin-left: 70px;
+}
+
+.landingDiv{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 100px; */
+}
+
+.landingDiv > h2{
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Cormorant SC', poppins, serif;
+    color: white;
+}
+
+.landingDiv > h1{
+    font-size: 100px;
+    line-height: 100px;
+    font-family: 'Cormorant SC', poppins, serif;
+    color: white;
+
+}
+
+.landingDiv >p{
+    font-family: 'Ibarra Real Nova', poppins, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.landing > button{
+    width: 200px;
+    height: 40px;
+    background: black;
+    color: white;
+    font-family: 'Cormorant SC', poppins, serif;
+    margin-top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 0;
+}
+
+}
+@media only screen and (max-width: 420px){
+
+    .landing{
+    height: 100vh;
+    width: calc(100vw - 50px);
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('/images/a.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-color: rgb(12, 12, 12);
+    background-blend-mode:soft-light;
+    filter: grayscale(0.5);
+    margin-left: 50px;
+}
+
+.landingDiv{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 100px; */
+}
+
+.landingDiv > h2{
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Cormorant SC', poppins, serif;
+    color: white;
+}
+
+.landingDiv > h1{
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Cormorant SC', poppins, serif;
+    color: white;
+
+}
+
+.landingDiv >p{
+    font-family: 'Ibarra Real Nova', poppins, serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.landing > button{
+    width: 200px;
+    height: 40px;
+    background: black;
+    color: white;
+    font-family: 'Cormorant SC', poppins, serif;
+    margin-top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 0;
+}
+
+}

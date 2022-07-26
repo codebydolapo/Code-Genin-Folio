@@ -1,0 +1,92 @@
+.menu{
+    display: none
+}
+
+@media screen and (max-width: 700px){
+    .menu{
+        width: calc(100vw - 70px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin-right: calc(-100vw - 70px);
+        transition: all ease 500ms;
+    }
+
+    .menuActive{
+        width: calc(100vw - 70px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transition: all ease 500ms;
+
+    }
+
+    .menuActive > p{
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .menu > p{
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .menu{
+        width: calc(100vw - 50px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin-right: calc(-100vw - 50px);
+        transition: all ease 500ms;
+
+    }
+
+    .menuActive{
+        width: calc(100vw - 50px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transition: all ease 500ms;
+    }
+
+    .menu > p{
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .menuActive > p{
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    
+}

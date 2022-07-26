@@ -1,73 +1,50 @@
 import styles from "../styles/navbar.module.css";
-import Image from "next/image";
-import {
-  BellIcon,
-  ChatIcon,
-  ChevronDownIcon,
-  HomeIcon,
-  UserGroupIcon,
-  ViewGridIcon,
-} from "@heroicons/react/solid";
-import {
-  FlagIcon,
-  PlayIcon,
-  SearchIcon,
-  ShoppingCartIcon,
-} from "@heroicons/react/outline";
-import { signOut } from "next-auth/react";
+import { ChevronDownIcon } from "@heroicons/react/outline";
+import { useDispatch, useSelector } from "react-redux";
+import { activateMenu, deactivateMenu } from "./reducers/actions";
 
+function Navbar() {
+  const dispatch = useDispatch();
+  const menuState = useSelector((state: any) => state.menuState);
 
-function Navbar({session}) {
+  function dispatchFunction() {
+    if (menuState) {
+      dispatch(deactivateMenu());
+    } else if (!menuState) {
+      dispatch(activateMenu());
+    }
+  }
+
   return (
-    <div className={styles.navBar}>
-      <div className={styles.navBarLeft}>
-        <h1>PN</h1>
-        <div className={styles.inputDiv}>
-          <SearchIcon className={styles.searchIcon} />
-          <input
-            type="text"
-            className={styles.inputField}
-            placeholder="Search Purple"
-          />
-        </div>
+    <div className={styles.navbar}>
+      <div className={styles.left}>
+        <img className={styles.logo} alt="" src="/icons/ma.jpg" />
       </div>
-      <div className={styles.navBarCenter}>
-        <div>
-          <HomeIcon className={styles.navBarCenterIcons} />
-        </div>
-        <div>
-          <FlagIcon className={styles.navBarCenterIcons} />
-        </div>
-
-        <div>
-          <PlayIcon className={styles.navBarCenterIcons} />
-        </div>
-
-        <div>
-          <ShoppingCartIcon className={styles.navBarCenterIcons} />
-        </div>
-
-        <div>
-          <UserGroupIcon className={styles.navBarCenterIcons} />
-        </div>
-      </div>
-      <div className={styles.navBarRight}>
-        <p className={styles.username}>{session.user.name}</p>
-        {/* <div className={styles.rightNav}>
-          <div>
-            <ViewGridIcon className={styles.navBarRightIcons} />
-          </div>
-          <div>
-            <ChatIcon className={styles.navBarRightIcons} />
-          </div>
-          <div>
-            <BellIcon className={styles.navBarRightIcons} />
-          </div>
-          <div>
-            <ChevronDownIcon className={styles.navBarRightIcons} />
-          </div>
-        </div> */}
-        <img src = {session.user.image} alt  = '' className = {styles.profileImg} onClick= {()=>{signOut()}}/>
+      <div className={styles.right}>
+        <p
+          onClick={() =>
+            window.open(
+              "https://mohammedadekunle.com.ng/assets/mohammed-adekunle-resume.pdf",
+              "_blank"
+            )
+          }
+        >
+          BLOG
+        </p>
+        <p
+          onClick={() =>
+            window.open("https://blog.mohammedadekunle.com.ng/", "_blank")
+          }
+        >
+          RESUME
+        </p>
+        <p>CONTACT</p>
+        <h2 className={styles.menu}>MENU</h2>
+        <ChevronDownIcon
+          className={menuState ? styles.menuIconActive : styles.menuIcon}
+          id="menuIcon"
+          onClick={dispatchFunction}
+        />
       </div>
     </div>
   );

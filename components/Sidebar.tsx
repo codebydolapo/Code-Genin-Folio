@@ -1,24 +1,45 @@
-import styles from '../styles/sidebar.module.css';
-import SidebarRow from './SidebarRow';
-import {ChevronDownIcon, ShoppingBagIcon, UserGroupIcon} from '@heroicons/react/outline'
-import {CalendarIcon, ClockIcon, DesktopComputerIcon, UsersIcon} from '@heroicons/react/solid'
-import Session from "C://PurpleNetwork/PurpleNetwork/types.d";
+import styles from '../styles/sidebar.module.css'
 
 
+function Sidebar(){
 
-function Sidebar({session}: Session){
-    return(
-        <div className = {styles.sideBar}>
-            <SidebarRow image = {session.user.image} title = {session.user.name}/>
-            <SidebarRow Icon = {UsersIcon} title = {'Friends'}/>
-            <SidebarRow Icon = {UserGroupIcon} title = {'Groups'}/>
-            <SidebarRow Icon = {ShoppingBagIcon} title = {'MarketPlace'}/>
-            <SidebarRow Icon = {DesktopComputerIcon} title = {'Watch'}/>
-            <SidebarRow Icon = {CalendarIcon} title = {'Events'}/>
-            <SidebarRow Icon = {ClockIcon} title = {'Memories'}/>
-            <SidebarRow Icon = {ChevronDownIcon} title = {'See More'}/>
-        </div>
-    )
+    return (
+      <div className={styles.sidebar}>
+        <img
+          src="/icons/git.png"
+          alt=""
+          onClick={() =>
+            window.open("https://github.com/the-code-genin", "_blank")
+          }
+        />
+        <img
+          src="/icons/twitter.png"
+          style={{ background: "black" }}
+          alt=""
+          onClick={() =>
+            window.open("https://twitter.com/the_code_genin", "_blank")
+          }
+        />
+        <img
+          src="/icons/linkedin.png"
+          alt=""
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/the-code-genin", "_blank")
+          }
+        />
+        <img
+          src="/icons/gmail.png"
+          alt=""
+          onClick={() =>
+            window.open(
+              "mailto:adekunle3317@gmail.com",
+              "_blank"
+            )
+          }
+        />
+      </div>
+    );
+
 }
 
-export default Sidebar;
+export default Sidebar
