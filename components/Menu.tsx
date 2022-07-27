@@ -6,6 +6,8 @@ import {activateMenu, deactivateMenu} from './reducers/actions'
 function Menu() {
   const menuState = useSelector((state: any) => state.menuState);
 
+  const dispatch = useDispatch()
+
   function handleAbout(){
       if (menuState) {
         dispatch(deactivateMenu());
