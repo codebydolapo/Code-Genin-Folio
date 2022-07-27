@@ -1,9 +1,18 @@
 import styles from "../styles/menu.module.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Link from "next/link";
+import {activateMenu, deactivateMenu} from './reducers/actions'
 
 function Menu() {
   const menuState = useSelector((state: any) => state.menuState);
+
+  function handleAbout(){
+      if (menuState) {
+        dispatch(deactivateMenu());
+      } else if (!menuState) {
+        dispatch(activateMenu());
+      }
+  }
 
   return (
     <div className={menuState ? styles.menuActive : styles.menu}>
@@ -25,7 +34,7 @@ function Menu() {
         Resume
       </p>
       <Link href="/#about">
-        <p>About</p>
+        <p onClick = {handleAbout}>About</p>
       </Link>
     </div>
   );
