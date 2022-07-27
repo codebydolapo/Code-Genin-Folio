@@ -26,22 +26,31 @@ function About() {
             <div className={styles.contactCardNameDiv}>
               <h2>Adekunle </h2>
               <h1>Mohammed</h1>
-              <button>Check Out My Resume</button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://mohammedadekunle.com.ng/assets/mohammed-adekunle-resume.pdf",
+                    "_blank"
+                  )
+                }
+              >
+                Check Out My Resume
+              </button>
             </div>
           </div>
-          <div className = {styles.underline}></div>
+          <div className={styles.underline}></div>
           <div className={styles.contactCardBottom}>
             <h1>Who Am I Anyway?</h1>
             <p>
               I'm a full-stack software developer with a specialization in
-              building and deploying backend services. 
+              building and deploying backend services.
             </p>
-            
+
             <p>
-              I build, deploy and manage software solutions for individuals
-              and corporate bodies, looking to leverage the power of modern
-              technology, towards optimizing their business/operation to
-              scale in the digital space.
+              I build, deploy and manage software solutions for individuals and
+              corporate bodies, looking to leverage the power of modern
+              technology, towards optimizing their business/operation to scale
+              in the digital space.
             </p>
           </div>
         </div>

@@ -2,6 +2,7 @@ import styles from "../styles/navbar.module.css";
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import { useDispatch, useSelector } from "react-redux";
 import { activateMenu, deactivateMenu } from "./reducers/actions";
+import Link from "next/link";
 
 function Navbar() {
   const dispatch = useDispatch();
@@ -23,23 +24,27 @@ function Navbar() {
       <div className={styles.right}>
         <p
           onClick={() =>
-            window.open(
-              "https://mohammedadekunle.com.ng/assets/mohammed-adekunle-resume.pdf",
-              "_blank"
-            )
+            window.open("https://blog.mohammedadekunle.com.ng/", "_blank")
           }
         >
           BLOG
         </p>
         <p
           onClick={() =>
-            window.open("https://blog.mohammedadekunle.com.ng/", "_blank")
+            window.open(
+              "https://mohammedadekunle.com.ng/assets/mohammed-adekunle-resume.pdf",
+              "_blank"
+            )
           }
         >
           RESUME
         </p>
-        <p>CONTACT</p>
-        <h2 className={styles.menu} onClick={dispatchFunction}>MENU</h2>
+        <Link href="/#about">
+          <p>ABOUT</p>
+        </Link>
+        <h2 className={styles.menu} onClick={dispatchFunction}>
+          MENU
+        </h2>
         <ChevronDownIcon
           className={menuState ? styles.menuIconActive : styles.menuIcon}
           id="menuIcon"
