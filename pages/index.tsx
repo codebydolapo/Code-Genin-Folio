@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/index.module.css";
 import Mainbody from "../components/Mainbody";
 import Navbar from "../components/Navbar";
+import Sidebar from '../components/Sidebar'
 
 
 
@@ -17,6 +18,7 @@ const Home: any | NextPage = () => {
       </Head>
       <Navbar />
       <Mainbody />
+      <Sidebar/>
     </div>
   );
 };

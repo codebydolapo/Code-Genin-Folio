@@ -39,7 +39,7 @@ function Navbar() {
           RESUME
         </p>
         <p>CONTACT</p>
-        <h2 className={styles.menu}>MENU</h2>
+        <h2 className={styles.menu} onClick={dispatchFunction}>MENU</h2>
         <ChevronDownIcon
           className={menuState ? styles.menuIconActive : styles.menuIcon}
           id="menuIcon"

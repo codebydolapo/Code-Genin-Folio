@@ -1,38 +1,15 @@
 .about {
+  min-height: 100vh;
   height: 100vh;
-  width: calc(100vw - 70px);
+  width: 100vw;
   padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background: white;
-  margin-left: 70px;
+  padding-top: 50px;
 }
-
-/* .left {
-  width: 70px;
-  height: 100%;
-  background: black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-
-.left > img{
-    width: 50px;
-    height: 50px;
-    /* border-radius: 50%; 
-    border-radius: 20px;
-    background: rgb(253, 253, 253);
-    margin: 20px 0;
-    transition: all ease 200ms;
-}
-
-.left > img:hover{
-    transform: scale(1.08);
-} */
 
 .right{
     width: 100%;
@@ -102,6 +79,7 @@
     background: rgb(72, 127, 245);
     border: 0;
     color: white;
+    cursor: pointer;
 }
 
 .contactCardBottom{
@@ -197,14 +175,13 @@
     .about {
   min-height: 100vh;
   height: auto;
-  width: calc(100vw - 70px);
-  padding-top: 50px;
+  width: 100vw;
+  /* padding-top: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: white;
-  margin-left: 70px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -212,30 +189,6 @@
 .about::-webkit-scrollbar{
     display: none;
 }
-
-/* .left {
-  width: 70px;
-  height: 100%;
-  background: black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-
-.left > img{
-    width: 50px;
-    height: 50px;
-    /* border-radius: 50%; 
-    border-radius: 20px;
-    background: rgb(253, 253, 253);
-    margin: 20px 0;
-    transition: all ease 200ms;
-}
-
-.left > img:hover{
-    transform: scale(1.08);
-} */
 
 .right{
     width: 100%;
@@ -250,7 +203,7 @@
 
 .contactCard{
     height: 100%;
-    width: 80%;
+    width: 95%;
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
@@ -266,12 +219,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .contactCardTop > img{
     height: auto;
-    width: 48%;
+    width: 45%;
     border-radius: 50%;
     transform: rotateZ(-45deg)
 }
@@ -311,6 +264,8 @@
     background: rgb(72, 127, 245);
     border: 0;
     color: white;
+    cursor: pointer;
+
 }
 
 .contactCardBottom{
@@ -336,7 +291,7 @@
 }
 
 .contactCardBottom > p{
-    width: 450px;
+    width: 95%;
     /* border: 1px solid black; */
     text-align: center;
     /* font-family: 'Ibarra real Nova'; */
@@ -396,13 +351,6 @@
     display: none;
 }
 
-/* .underline{
-    width: 60%;
-    height: 3px;
-    background: black;
-    margin-top: 10px;
-} */
-
 }
 
 
@@ -412,14 +360,13 @@
     .about {
   min-height: 100vh;
   height: auto;
-  width: calc(100vw - 50px);
-  padding-top: 50px;
+  width: 100vw;
+  /* padding-top: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: white;
-  margin-left: 50px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -428,35 +375,10 @@
     display: none;
 }
 
-/* .left {
-  width: 70px;
-  height: 100%;
-  background: black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-
-.left > img{
-    width: 50px;
-    height: 50px;
-    /* border-radius: 50%; 
-    border-radius: 20px;
-    background: rgb(253, 253, 253);
-    margin: 20px 0;
-    transition: all ease 200ms;
-}
-
-.left > img:hover{
-    transform: scale(1.08);
-} */
-
 .right{
     width: 100%;
     min-height: 100%;
     height: auto;
-    display: flex;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -481,12 +403,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 20px;
 }
 
 .contactCardTop > img{
     height: auto;
-    width: 48%;
+    width: 45%;
     border-radius: 50%;
     transform: rotateZ(-45deg)
 }
@@ -520,13 +441,15 @@
 }
 
 .contactCardNameDiv > button{
-    width: 150px;
+    width: 98%;
     height: 40px;
     margin-top: 20px;
     background: rgb(72, 127, 245);
     border: 0;
-    font-size: 12px;
+    font-size: auto;
     color: white;
+    cursor: pointer;
+
 }
 
 .contactCardBottom{
@@ -552,7 +475,7 @@
 }
 
 .contactCardBottom > p{
-    width: 340px;
+    width: 95%;
     /* border: 1px solid black; */
     text-align: center;
     /* font-family: 'Ibarra real Nova'; */
@@ -612,12 +535,6 @@
     display: none;
 }
 
-/* .underline{
-    width: 60%;
-    height: 3px;
-    background: black;
-    margin-top: 10px;
-} */
 
 }
 @media only screen and (max-width: 350px){
@@ -625,14 +542,13 @@
     .about {
   min-height: 100vh;
   height: auto;
-  width: calc(100vw - 50px);
-  padding-top: 50px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: white;
-  margin-left: 50px;
+  background: rgb(245, 244, 244);
+  /* margin-left: 50px; */
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -640,30 +556,6 @@
 .about::-webkit-scrollbar{
     display: none;
 }
-
-/* .left {
-  width: 70px;
-  height: 100%;
-  background: black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-
-.left > img{
-    width: 50px;
-    height: 50px;
-    /* border-radius: 50%; 
-    border-radius: 20px;
-    background: rgb(253, 253, 253);
-    margin: 20px 0;
-    transition: all ease 200ms;
-}
-
-.left > img:hover{
-    transform: scale(1.08);
-} */
 
 .right{
     width: 100%;
@@ -694,18 +586,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 20px;
 }
 
 .contactCardTop > img{
     height: auto;
-    width: 48%;
+    width: 45%;
     border-radius: 50%;
     transform: rotateZ(-45deg)
 }
 
 .contactCardNameDiv{
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -724,7 +615,7 @@
 
 .contactCardNameDiv > h1{
     font-family: 'Ibarra real Nova';
-    font-size: 25px;
+    font-size: 26px;
     /* color: grey */
     color: #3c4043;
 
@@ -733,14 +624,17 @@
 }
 
 .contactCardNameDiv > button{
-    width: 100px;
-    height: 40px;
+    width: 95%;
+    height: 35px;
     margin-top: 20px;
     background: rgb(72, 127, 245);
     border: 0;
-    font-size: 10px;
+    font-size: auto;
     color: white;
-    display: none;
+    /* display: none; */
+    border-radius: 5px;
+    cursor: pointer;
+
 }
 
 .contactCardBottom{
@@ -757,7 +651,7 @@
 
 .contactCardBottom > h1{
     /* font-family: 'Ibarra real Nova'; */
-    font-size: 30px;
+    font-size: 25px;
     color: #3c4043;
     font-weight: 300;
     text-decoration: underline;
@@ -766,7 +660,7 @@
 }
 
 .contactCardBottom > p{
-    width: 290px;
+    width: 95%;
     /* border: 1px solid black; */
     text-align: center;
     /* font-family: 'Ibarra real Nova'; */

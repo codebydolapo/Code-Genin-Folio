@@ -3,8 +3,12 @@ import styles from '../styles/sidebar.module.css'
 
 function Sidebar(){
 
+  const code = '<Code/>'
+
     return (
       <div className={styles.sidebar}>
+        <div className = {styles.iconDiv}>
+
         <img
           src="/icons/git.png"
           alt=""
@@ -37,6 +41,11 @@ function Sidebar(){
             )
           }
         />
+        </div>
+        <div className = {styles.copyrights}>
+          <p>Copyright: The {code} Genin, 2022</p>
+          <h5>-BDO</h5>
+        </div>
       </div>
     );
 

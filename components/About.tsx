@@ -1,7 +1,7 @@
 import styles from "../styles/about.module.css";
 import ResumeCard from './ResumeCard'
 import {resumeHighlights}from './data/resumeHighlights'
-import Sidebar from './Sidebar'
+
 
 interface Props {
   firm: string;
@@ -19,7 +19,6 @@ function About() {
         {/* <img src = '/icons/hashnode.png' alt = ''/> 
         <img src="/icons/linkedin.png" alt="" />
       </div> */}
-      <Sidebar/>
       <div className={styles.right}>
         <div className={styles.contactCard}>
           <div className={styles.contactCardTop}>
@@ -71,13 +70,3 @@ function About() {
 
 export default About;
 
-//<p>
-//   I'm a full-stack software developer with a specialization in building
-//   and deploying backend services.
-// </p>
-// <p>
-//   I build, deploy and manage software solutions for individuals and
-//   corporate bodies, looking to leverage the power of modern technology, towards
-//   optimizing their business/operation to scale in the digital space.
-// </p>
-// <button>Check Out My Resume</button>
